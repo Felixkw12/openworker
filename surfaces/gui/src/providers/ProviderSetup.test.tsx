@@ -136,3 +136,17 @@ describe("Atlas Cloud provider presentation", () => {
     expect(container.querySelector("img")).not.toBeNull();
   });
 });
+
+describe("Opper provider presentation", () => {
+  it("links to the Opper API key page", () => {
+    expect(KEY_HELP.opper).toEqual({
+      url: "https://platform.opper.ai",
+      label: "platform.opper.ai",
+    });
+  });
+
+  it("wears the bundled Opper mark", () => {
+    const { container } = render(<ProviderMark name="opper" title="Opper" />);
+    expect(container.querySelector("img")).not.toBeNull();
+  });
+});

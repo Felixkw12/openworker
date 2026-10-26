@@ -56,6 +56,7 @@ export const KEY_HELP: Record<string, { url: string; label: string; labelKey?: s
   atlascloud: { url: "https://www.atlascloud.ai/console/api-keys", label: "atlascloud.ai" },
   groq: { url: "https://console.groq.com/keys", label: "console.groq.com" },
   upstage: { url: "https://console.upstage.ai/api-keys", label: "console.upstage.ai" },
+  opper: { url: "https://platform.opper.ai", label: "platform.opper.ai" },
 };
 
 export type Verify = { state: "idle" | "testing" | "ok" | "error"; msg?: string };
